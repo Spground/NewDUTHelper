@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.0"
+
+    defaultConfig {
+        applicationId "com.siwe.dutschedule"
+        minSdkVersion 8
+        targetSdkVersion 22
+        versionCode 16
+        versionName "3.1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    signingConfigs {
+        debug {
+            storeFile file("C:\\Users\\android_keystore\\duthelper\\release.store")
+            storePassword "755213"
+            keyPassword "755213"
+            keyAlias "myapp"
+        }
+    }
+}
+task nativeLibsToJar(type: Zip, description: "create a jar archive of the native libs") {
+    destinationDir file("$projectDir/libs")
+    baseName "Native_Libs2"
+    extension "jar"
+    from fileTree(dir: "libs", include: "**/*.so")
+    into "lib"
+}
+
+tasks.withType(JavaCompile) {
+    compileTask -> compileTask.dependsOn(nativeLibsToJar)
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile files('libs/pushservice-3.2.0.jar')
+    compile files('libs/umeng_sdk.jar')
+    compile project(':vitamio')
+}
