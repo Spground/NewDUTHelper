@@ -1,7 +1,5 @@
 package com.siwe.dutschedule.base;
 
-import java.util.HashMap;
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -25,6 +23,9 @@ import com.siwe.dutschedule.util.AppCache;
 import com.siwe.dutschedule.util.AppUtil;
 import com.siwe.dutschedule.util.ToastUtil;
 import com.umeng.analytics.MobclickAgent;
+import com.umeng.message.PushAgent;
+
+import java.util.HashMap;
 
 public class BaseUi extends FragmentActivity {
 
@@ -54,15 +55,10 @@ public class BaseUi extends FragmentActivity {
 		this.taskPool = new BaseTaskPool(this);
 		// init application
 		this.app = (BaseApp) this.getApplicationContext();
-		
+		//友盟统计
+		PushAgent.getInstance(this.getApplicationContext()).onAppStart();
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 	}
-
-	/*private void checkBaseurl() {
-		if(C.api.base == null)
-			C.api.setBase(AppUtil.getSharedPreferences(this).getString("baseurl",
-				""));
-	}*/
 
 	@Override
 	protected void onResume() {

@@ -82,7 +82,7 @@ public class FragSetting extends BaseFragment implements OnClickListener {
 			break;
 		case R.id.b_contact:
 			new BaseDialog(baseUi,
-					" 您可以通过以下方式联系我们:\n\n1.设置界面的“反馈问题”\n2.E-Mail: yimulinwei@gmail.com\n3.QQ: 755213779")
+					" 您可以通过以下方式联系我们:\n\n1.设置界面的“反馈问题”\n2.E-Mail: dut_helper@163.com\n")
 					.show();
 			break;
 		}

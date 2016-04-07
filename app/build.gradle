@@ -8,15 +8,17 @@ android {
         applicationId "com.siwe.dutschedule"
         minSdkVersion 8
         targetSdkVersion 22
-        versionCode 16
-        versionName "3.1.0"
+        versionCode 19
+        versionName "3.1.21"
     }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
     signingConfigs {
         debug {
             storeFile file("C:\\Users\\android_keystore\\duthelper\\release.store")
@@ -37,6 +39,7 @@ task nativeLibsToJar(type: Zip, description: "create a jar archive of the native
 tasks.withType(JavaCompile) {
     compileTask -> compileTask.dependsOn(nativeLibsToJar)
 }
+
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
@@ -44,4 +47,5 @@ dependencies {
     compile files('libs/pushservice-3.2.0.jar')
     compile files('libs/umeng_sdk.jar')
     compile project(':vitamio')
+    compile project(':PushSDK')
 }

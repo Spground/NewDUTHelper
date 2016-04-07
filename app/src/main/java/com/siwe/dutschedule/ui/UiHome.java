@@ -133,11 +133,11 @@ public class UiHome extends BaseUi {
 
 		userImage = (ImageView) findViewById(R.id.img_user);
 		userName = (TextView) findViewById(R.id.s_tv_user_name);
-		myLeftLinear = new ArrayList<View>();
-		myLeftLinear.add((View) findViewById(R.id.s_linear_survey_center));
-		myLeftLinear.add((View) findViewById(R.id.s_linear_friends));
-		myLeftLinear.add((View) findViewById(R.id.s_linear_setting));
-		myColorText = new ArrayList<TextView>();
+		myLeftLinear = new ArrayList<>();
+		myLeftLinear.add(findViewById(R.id.s_linear_survey_center));
+		myLeftLinear.add(findViewById(R.id.s_linear_friends));
+		myLeftLinear.add(findViewById(R.id.s_linear_setting));
+		myColorText = new ArrayList<>();
 		myColorText.add((TextView) findViewById(R.id.tv_survey_color));
 		myColorText.add((TextView) findViewById(R.id.tv_friends_color));
 		myColorText.add((TextView) findViewById(R.id.tv_setting_color));

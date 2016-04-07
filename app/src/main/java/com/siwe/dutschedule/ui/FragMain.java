@@ -29,7 +29,7 @@ public class FragMain extends BaseFragment{
 	private ImageButton btn_notice;
 	
 	public FragMain(){
-		
+		super();
 	}
 
 	public FragMain(Context context) {
@@ -98,22 +98,6 @@ public class FragMain extends BaseFragment{
 				break;
 			case R.id.imageButton5:
 				baseUi.forward(UiVideo.class);
-				/*Bundle bd = new Bundle();
-				bd.putString("title", "大工助手");
-				bd.putString("message", "视频功能需要安装插件，这会耗费你的一部分内存(7M左右)，是否下载带视频插件的大工助手完整版？");
-				bd.putBoolean("showCancel", true);
-				BaseDialog dialog = new BaseDialog(baseUi, bd);
-				dialog.setOnConfirmListener(new OnClickListener() {
-					@Override
-					public void onClick(View v) {
-						Intent intent = new Intent();       
-			            intent.setAction("android.intent.action.VIEW");   
-			            Uri content_url = Uri.parse(C.api.initsource + C.api.download);  
-			            intent.setData(content_url); 
-			            startActivity(intent);
-					}
-				});
-				dialog.show();*/
 				break;
 			case R.id.imageButton6:
 				Intent sendIntent = new Intent();

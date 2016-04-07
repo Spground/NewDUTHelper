@@ -22,7 +22,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="23dp"
-            android:text="创新实验学院出品"
+            android:text="创新创业学院出品"
             android:textColor="#CC9966"
             android:textSize="14sp" />
 
