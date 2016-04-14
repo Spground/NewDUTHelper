@@ -2,7 +2,7 @@ package com.siwe.dutschedule.util;
 
 public class VideoList {
 
-	public static final String[] channelName = { "直播", "CCTV1综合", "CCTV2财经",
+	public static final String[] channelName = { "CCTV5高清", "直播", "CCTV1综合", "CCTV2财经",
 			"CCTV4中文国际", "CCTV5体育", "CCTV6电影", "CCTV7军事 农业", "CCTV8电视剧",
 			"CCTV9记录", "CCTV10科教", "CCTV11戏曲", "CCTV12社会与法", "CCTV13新闻",
 			"CCTV14少儿", "CCTV15音乐", "CCTV NEWS", "CCTV 世界地理", "辽宁体育", "DLTV1",
@@ -13,6 +13,7 @@ public class VideoList {
 			"长春4", "江西卫视", "山东卫视" };
 
 	public static final String[] channelUrl = {
+			"http://202.118.65.176:8090/live/stream",
 			"mms://vod.dlut.edu.cn/zhibo",
 			"mms://vod.dlut.edu.cn/cctv1",
 			"mms://vod.dlut.edu.cn/cctv2",
