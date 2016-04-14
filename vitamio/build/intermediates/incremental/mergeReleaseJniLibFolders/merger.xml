@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="F:\Android\NewDUTHelper\vitamio\libs"><file name="armeabi/libvinit.so" path="F:\Android\NewDUTHelper\vitamio\libs\armeabi\libvinit.so"/><file name="armeabi-v7a/libvinit.so" path="F:\Android\NewDUTHelper\vitamio\libs\armeabi-v7a\libvinit.so"/></source></dataSet><dataSet config="release"><source path="F:\Android\NewDUTHelper\vitamio\src\release\jniLibs"/></dataSet></merger>
