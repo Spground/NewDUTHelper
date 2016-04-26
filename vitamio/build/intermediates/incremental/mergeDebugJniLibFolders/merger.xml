@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="C:\Users\WuJie\git\NewDUTHelper\vitamio\libs"><file name="armeabi/libvinit.so" path="C:\Users\WuJie\git\NewDUTHelper\vitamio\libs\armeabi\libvinit.so"/><file name="armeabi-v7a/libvinit.so" path="C:\Users\WuJie\git\NewDUTHelper\vitamio\libs\armeabi-v7a\libvinit.so"/></source></dataSet><dataSet config="debug"><source path="C:\Users\WuJie\git\NewDUTHelper\vitamio\src\debug\jniLibs"/></dataSet></merger>
