@@ -48,4 +48,5 @@ dependencies {
     compile files('libs/umeng_sdk.jar')
     compile project(':vitamio')
     compile project(':PushSDK')
+    compile 'com.squareup.picasso:picasso:2.5.2'
 }

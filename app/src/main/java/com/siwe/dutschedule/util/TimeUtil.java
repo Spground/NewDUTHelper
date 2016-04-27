@@ -152,7 +152,7 @@ public class TimeUtil {
 	}
 	
 	// 判断课程是否在上课周内
-	public static boolean judgeIsTime(Schedule item,int weekToShow) {
+	public static boolean judgeIsTime(Schedule item, int weekToShow) {
 		try {
 			String weeks = item.getWeeks();
 			Matcher matcher = Pattern.compile("\\d+").matcher(weeks);

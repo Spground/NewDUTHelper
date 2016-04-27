@@ -24,11 +24,11 @@ public class Schedule extends BaseModel implements Parcelable {
 	private String credit;
 	private String type;
 	private String teacher;
-	private String weeks;
-	private String weekday;
-	private String seque;
+	private String weeks;//上几周
+	private String weekday;//什么时候上
+	private String seque;//第几节课
 	private String amount;
-	private String position;
+	private String position;//上课地点
 
 	@Override
 	public int describeContents() {

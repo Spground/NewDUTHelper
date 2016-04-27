@@ -330,7 +330,7 @@ public class UiScore extends BaseUi {// widget
 		mPager = (ViewPager) findViewById(R.id.viewpager);
 		if (listThis.isEmpty() && listAll.isEmpty())
 			toastE(C.err.emptydata);
-		listViews = new ArrayList<View>();
+		listViews = new ArrayList<>();
 		for (int i = 0; i < 2; i++) {
 			listViews.add(this.getLayout(R.layout.pager_score));
 		}
