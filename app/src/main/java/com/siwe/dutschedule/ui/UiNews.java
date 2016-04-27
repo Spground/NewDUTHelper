@@ -34,7 +34,11 @@ public class UiNews extends BaseUi {// widget
 	private ImageView cursor;
 
 	// data
+<<<<<<< HEAD
 	private ArrayList<ArrayList<News>> listNews = new ArrayList<ArrayList<News>>(
+=======
+	private ArrayList<ArrayList<News>> listNews = new ArrayList<>(
+>>>>>>> e748596a0f4a0801c7e009b045228afb9b7de4dc
 			); // 容量为3
 
 	private int screenW;
@@ -133,7 +137,11 @@ public class UiNews extends BaseUi {// widget
 	}
 
 	protected void doTaskRefresh() {
+<<<<<<< HEAD
 		HashMap<String, String> urlParams = new HashMap<String, String>();
+=======
+		HashMap<String, String> urlParams = new HashMap<>();
+>>>>>>> e748596a0f4a0801c7e009b045228afb9b7de4dc
 		urlParams.put("type", String.valueOf(currIndex));
 		taskIndex = currIndex;
 		try {
