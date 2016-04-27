@@ -8,7 +8,9 @@
     <color name="gray">#FFFFEE</color>
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
-
+    <color name="yellow">#EEC472</color>
+    <color name="light_blue">#5FBBE5</color>
+    
     <color name="text">#333333</color>
     <color name="body1">#FFFFFF</color>
     <color name="body2">#F9F9F9</color>
@@ -23,6 +25,8 @@
     <color name="gold">#000000</color>
     <color name="transparent">#00000000</color>
     <color name="action_back">#336666</color>
+    <color name="actionbar_view_pressed">#224444</color>
+    <color name="actionbar_view_normal">#527e7d</color>
     <color name="action_menu_pressed" >#333333</color>
     <color name="global_gray">#dddddd</color>
     <color name="semitransparent">#4d000000</color>

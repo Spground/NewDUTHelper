@@ -18,15 +18,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+//    signingConfigs {
+//        debug {
+//            storeFile file("C:\\Users\\android_keystore\\duthelper\\release.store")
+//            storePassword "755213"
+//            keyPassword "755213"
+//            keyAlias "myapp"
+//        }
+//    }
 
-    signingConfigs {
-        debug {
-            storeFile file("C:\\Users\\android_keystore\\duthelper\\release.store")
-            storePassword "755213"
-            keyPassword "755213"
-            keyAlias "myapp"
-        }
-    }
 }
 task nativeLibsToJar(type: Zip, description: "create a jar archive of the native libs") {
     destinationDir file("$projectDir/libs")
@@ -48,4 +48,5 @@ dependencies {
     compile files('libs/umeng_sdk.jar')
     compile project(':vitamio')
     compile project(':PushSDK')
+    compile 'com.squareup.picasso:picasso:2.5.2'
 }

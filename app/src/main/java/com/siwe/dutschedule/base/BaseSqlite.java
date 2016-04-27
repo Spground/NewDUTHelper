@@ -108,7 +108,7 @@ public abstract class BaseSqlite {
 	 */
 	public ArrayList<? extends BaseModel> query(String[] columns, String where,
 			String[] params) {
-		ArrayList<BaseModel> rList = new ArrayList<BaseModel>();
+		ArrayList<BaseModel> rList = new ArrayList<>();
 		if (columns == null)
 			columns = tableColumns();
 		try {

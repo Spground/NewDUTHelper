@@ -17,6 +17,7 @@ public class UiDisplay extends BaseUi {
 	private String path;
 	private VideoView mVideoView;
 
+	public static final String EXTRAL_PATH_ = "channallist";
 	@Override
 	public void onCreate(Bundle icicle) {
 		super.onCreate(icicle);
