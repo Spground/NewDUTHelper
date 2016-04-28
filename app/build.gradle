@@ -18,6 +18,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    lintOptions {
+        abortOnError false
+    }
 }
 task nativeLibsToJar(type: Zip, description: "create a jar archive of the native libs") {
     destinationDir file("$projectDir/libs")
