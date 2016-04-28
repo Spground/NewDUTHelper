@@ -24,7 +24,7 @@ android:
 
     # Specify at least one system image,
     # if you need to run emulator(s) during your tests
-    - sys-img-armeabi-v7a-android-8
+    - sys-img-armeabi-v7a-android-14
     #- sys-img-armeabi-v7a-android-15
     #- sys-img-armeabi-v7a-android-21
     #- sys-img-armeabi-v7a-android-22
@@ -42,7 +42,7 @@ env:
   # Emulator Management: Create, Start and Wait
 before_script:
    - echo no | android create avd --force -n test -t android-21 --abi armeabi-v7a
-   - echo no | android create avd --force -n test2 -t android-8
+   - echo no | android create avd --force -n test1 -t android-14 --abi armeabi-v7a
    - emulator -avd test -no-audio -no-window &
    - emulator -avd test1 -no-audio -no-window &
    - android-wait-for-emulator
