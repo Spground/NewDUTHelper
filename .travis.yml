@@ -61,7 +61,7 @@ before_script:
     - ./scripts/wait_for_emulator.sh
     - adb shell input keyevent 82 &
     - ANDROID_SERIAL=''
-    - adb devices -1
+    - adb devices -l
 
 script:
   - android list target
