@@ -43,8 +43,8 @@ env:
 before_install:
     - export ANDROID_SERIAL='emulator-5554'
     - chmod +x gradlew
-    - chmod +x ./script/wait_for_emulator.sh
-    
+    - chmod +x ./scripts/wait_for_emulator.sh
+
     # Emulator Management: Create, Start and Wait
 install:
    - echo no | android create avd --force -n test -t android-21 --abi armeabi-v7a
