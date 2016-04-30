@@ -27,7 +27,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center_vertical|center_horizontal|center"
-                android:background="@drawable/vb_kebiao"
+                android:background="@drawable/selelctor_vb_kebiao"
                 android:scaleType="centerInside" />
 
             <TextView
@@ -41,7 +41,7 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center_vertical|center_horizontal"
                 android:adjustViewBounds="true"
-                android:background="@drawable/vb_chengji"
+                android:background="@drawable/selelctor_vb_chengji"
                 android:scaleType="fitXY" />
 
             <TextView
@@ -69,7 +69,7 @@
                 android:id="@+id/imageButton3"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="@drawable/vb_kaoshi"
+                android:background="@drawable/selelctor_vb_kaoshi"
                 android:scaleType="fitXY" />
 
             <TextView
@@ -81,7 +81,7 @@
                 android:id="@+id/imageButton4"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="@drawable/vb_gonggao"
+                android:background="@drawable/selelctor_vb_gonggao"
                 android:scaleType="fitXY" />
 
             <TextView
@@ -109,7 +109,7 @@
                 android:id="@+id/imageButton5"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="@drawable/vb_shipin"
+                android:background="@drawable/selelctor_vb_shipin"
                 android:scaleType="fitXY" />
 
             <TextView
@@ -122,7 +122,7 @@
                 android:id="@+id/imageButton6"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="@drawable/vb_xiaoxi"
+                android:background="@drawable/selelctor_vb_xiaoxi"
                 android:scaleType="fitXY" />
 
             <TextView
