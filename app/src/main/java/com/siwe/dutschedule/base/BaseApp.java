@@ -3,7 +3,6 @@ package com.siwe.dutschedule.base;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.baidu.frontia.FrontiaApplication;
 import com.siwe.dutschedule.ui.UiPushNotice;
@@ -35,7 +34,7 @@ public class BaseApp extends FrontiaApplication {
 			public void dealWithCustomAction(Context context, UMessage msg) {
 				Intent showNotice = new Intent(context, UiPushNotice.class);
 				showNotice.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-				showNotice.putExtra(UiPushNotice.EXTRAL_MSG, msg.custom);
+				showNotice.putExtra(UiPushNotice.EXTRA_MSG, msg.custom);
 				startActivity(showNotice);
 			}
 		};

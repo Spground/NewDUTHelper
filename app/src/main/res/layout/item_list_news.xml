@@ -41,6 +41,17 @@
         android:text="首届大连市高校移动应用开发与设计大赛"
         android:textColor="@color/text"
         android:textSize="17sp" />
+        <TextView
+            android:id="@+id/dept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="后勤处"
+            android:visibility="invisible"
+            android:textColor="@color/light_blue"
+            android:textSize="13sp"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignStart="@+id/textView1" />
 
     <TextView
         android:id="@+id/textView2"
@@ -49,6 +60,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:text="time"
+        android:layout_marginTop="2dp"
         android:textColor="@color/menu2"
         android:textSize="13sp" />
 

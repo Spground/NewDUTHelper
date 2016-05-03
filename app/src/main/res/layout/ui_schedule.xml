@@ -279,7 +279,7 @@
             android:layout_below="@id/line"
             android:background="@drawable/bg3"
             android:orientation="vertical"
-            android:visibility="gone"
+            android:visibility="visible"
             android:weightSum="5">
 
             <TableRow
@@ -352,8 +352,6 @@
                     android:layout_margin="0.5dp"
                     android:layout_weight="1"
                     android:gravity="center"
-                    
-
                     android:textColor="@color/white"
                     android:textSize="10sp" />
 
@@ -482,6 +480,24 @@
                     android:textColor="@color/white"
                     android:textSize="10sp" />
             </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="午            休"
+                android:textSize="14sp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
 
             <TableRow
                 android:id="@+id/c3"
@@ -684,10 +700,29 @@
                     android:textSize="10sp" />
             </TableRow>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="晚          饭"
+                android:textSize="14sp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
             <TableRow
                 android:id="@+id/c5"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
                 android:layout_weight="1">
                 <TextView
                     android:text="第\n五\n节"

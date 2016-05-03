@@ -115,7 +115,7 @@ public class UiExam extends BaseUi {
 				datalist = (ArrayList<Exam>) message.getResultList("Exam");
 				// 写库
 				sqlite = new ExamSqlite(this);
-				((ExamSqlite) sqlite).updateAll(datalist);
+				sqlite.updateAll(datalist);
 
 				this.initViewData();
 			} catch (Exception e) {

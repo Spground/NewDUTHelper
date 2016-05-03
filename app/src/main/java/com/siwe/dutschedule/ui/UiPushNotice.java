@@ -9,7 +9,7 @@ import com.siwe.dutschedule.base.BaseUi;
 
 public class UiPushNotice extends BaseUi {
 
-    public static final String EXTRAL_MSG = "notice_content";
+    public static final String EXTRA_MSG = "notice_content";
     private String notice_content = "";
 
     private ActionBar actionBar;
@@ -18,7 +18,7 @@ public class UiPushNotice extends BaseUi {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ui_push_notice);
         initActionBar();
-        notice_content = getIntent().getStringExtra(EXTRAL_MSG);
+        notice_content = getIntent().getStringExtra(EXTRA_MSG);
         ((EditText)findViewById(R.id.notice_content)).setText(notice_content);
     }
 

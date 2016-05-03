@@ -19,6 +19,20 @@
             android:layout_marginTop="5dp" >
 
             <TextView
+                android:id="@+id/xiaoneitongzhi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="校内通知"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/text" />
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:background="@color/global_gray"
+                android:shadowColor="@color/action_menu_pressed" />
+            <TextView
                 android:id="@+id/jiaowu"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -26,27 +40,10 @@
                 android:gravity="center_horizontal"
                 android:text="教务处"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="@color/text" />
+                android:textColor="@color/global_gray" />
 
             <TextView
                 android:id="@+id/textView3"
-                android:layout_width="1dp"
-                android:layout_height="wrap_content"
-                android:background="@color/global_gray"
-                android:shadowColor="@color/action_menu_pressed" />
-
-            <TextView
-                android:id="@+id/tuanwei"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center_horizontal"
-                android:text="团委"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="@color/global_gray" />
-            
-            <TextView
-                android:id="@+id/textView4"
                 android:layout_width="1dp"
                 android:layout_height="wrap_content"
                 android:background="@color/global_gray"

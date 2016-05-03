@@ -65,8 +65,8 @@ public class UiHome extends BaseUi {
 	// /右侧控件
 	// /
 	private ListView listViewRight;
-	public ArrayList<Bbs> listBbs = new ArrayList<Bbs>();
-	private ArrayList<Bbs> listUnread = new ArrayList<Bbs>();
+	public ArrayList<Bbs> listBbs = new ArrayList<>();
+	private ArrayList<Bbs> listUnread = new ArrayList<>();
 	private MenuUnreadListAdapter myAdapter = null;
 
 	// ////////////////////////////////////////////////////////////////////////////////////

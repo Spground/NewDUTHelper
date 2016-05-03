@@ -51,7 +51,9 @@ public final class C {
 		public static final String delcomment       = "bbs/delcomment";
 		
 		public static final String doinform         = "extra/inform";
-		
+
+		public static final String idg_base = "http://202.118.65.53/mobileplatform/unifiedEntranceModel.do";
+
 	}
 	
 	public static final class task {
@@ -120,5 +122,9 @@ public final class C {
 		public static final String base				= "http://192.168.9.122:8002";
 		public static final String index			= base + "/index.php";
 		public static final String gomap			= base + "/gomap.php";
+	}
+
+	public static final class idg {
+		public static final String initRequestParams = "{\"imei\":\"\",\"appid\":\"dlut_xntzgl\"}";
 	}
 }
