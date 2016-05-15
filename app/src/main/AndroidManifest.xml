@@ -81,21 +81,12 @@
             <intent-filter>
                 <action android:name="UPDATE_APP_WIDGET" />
             </intent-filter>
-
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/schedulewidget" />
         </receiver>
 
         <!-- ############# 友盟SDK ###################### -->
-        <activity
-            android:name="com.umeng.fb.ui.SendFeedback"
-            android:windowSoftInputMode="adjustResize" />
-        <activity android:name="com.umeng.fb.ui.FeedbackConversations" />
-        <activity
-            android:name="com.umeng.fb.ui.FeedbackConversation"
-            android:configChanges="keyboard" />
-
         <meta-data
             android:name="UMENG_APPKEY"
             android:value="5179185256240b448f000fce" />
@@ -105,73 +96,16 @@
         <meta-data
             android:name="UMENG_CHANNEL"
             android:value="Channel ID" />
+        <activity
+            android:name="com.umeng.fb.ui.SendFeedback"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.umeng.fb.ui.FeedbackConversations" />
+        <activity
+            android:name="com.umeng.fb.ui.FeedbackConversation"
+            android:configChanges="keyboard" />
         <service
             android:name="com.umeng.common.net.DownloadingService"
             android:exported="true"
             android:process=":DownloadingService" />
-
-        <!-- ################# 百度推送 ################### -->
-        <!-- <meta-data -->
-        <!-- android:name="api_key" -->
-        <!-- android:value="n2IFfPCX127KSFkaHLrO1Hdf" /> -->
-        <meta-data
-            android:name="api_key"
-            android:value="5H9KepolE9Vl9Kv58vk9DLwy" />
-        <!-- push富媒体，不使用富媒体推送不需要 -->
-        <activity
-            android:name="com.baidu.android.pushservice.richmedia.MediaViewActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:label="MediaViewActivity" />
-        <activity
-            android:name="com.baidu.android.pushservice.richmedia.MediaListActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:label="MediaListActivity"
-            android:launchMode="singleTask" />
-        <!-- push富媒体结束 -->
-
-
-        <!-- push应用定义消息receiver声明 -->
-        <receiver android:name=".service.MyPushMessageReceiver">
-            <intent-filter>
-
-                <!-- 接收push消息 -->
-                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
-                <!-- 接收bind,unbind,fetch,delete等反馈消息 -->
-                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
-                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
-            </intent-filter>
-        </receiver>
-
-        <!-- push必须的receviver和service声明 -->
-        <receiver
-            android:name="com.baidu.android.pushservice.PushServiceReceiver"
-            android:process=":bdservice_v1">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
-                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
-            </intent-filter>
-        </receiver>
-        <receiver
-            android:name="com.baidu.android.pushservice.RegistrationReceiver"
-            android:process=":bdservice_v1">
-            <intent-filter>
-                <action android:name="com.baidu.android.pushservice.action.METHOD" />
-                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.PACKAGE_REMOVED" />
-
-                <data android:scheme="package" />
-            </intent-filter>
-        </receiver>
-
-        <service
-            android:name="com.baidu.android.pushservice.PushService"
-            android:exported="true"
-            android:process=":bdservice_v1" />
-        <!-- push结束 -->
     </application>
-
 </manifest>
