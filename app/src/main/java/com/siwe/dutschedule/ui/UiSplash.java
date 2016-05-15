@@ -4,20 +4,13 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.util.Log;
-
-import com.baidu.android.pushservice.PushConstants;
-import com.baidu.android.pushservice.PushManager;
 import com.siwe.dutschedule.R;
 import com.siwe.dutschedule.base.BaseService;
 import com.siwe.dutschedule.base.BaseUi;
 import com.siwe.dutschedule.service.AutoLoginService;
 import com.siwe.dutschedule.util.AppUtil;
-import com.siwe.dutschedule.util.PushUtils;
 import com.umeng.analytics.MobclickAgent;
 import com.umeng.message.PushAgent;
-
-import java.util.Calendar;
 
 public class UiSplash extends BaseUi {
     boolean isFirstIn;
@@ -53,7 +46,6 @@ public class UiSplash extends BaseUi {
         setContentView(R.layout.ui_splash);
         preferences = AppUtil.getSharedPreferences(this);
         initUmeng();
-        initBaiduPush();
         initJump();
     }
 
@@ -64,19 +56,6 @@ public class UiSplash extends BaseUi {
         PushAgent mPushAgent = PushAgent.getInstance(this.getApplicationContext());
         if(!mPushAgent.isEnabled())
             mPushAgent.enable();
-    }
-
-    private void initBaiduPush() {
-        // Push: 以apikey的方式登录，一般放在主Activity的onCreate中。
-        Log.d("YYY", "before start work at "
-                + Calendar.getInstance().getTimeInMillis());
-        PushManager.startWork(getApplicationContext(),
-                PushConstants.LOGIN_TYPE_API_KEY,
-                PushUtils.getMetaValue(this, "api_key"));
-        Log.d("YYY", "after start work at "
-                + Calendar.getInstance().getTimeInMillis());
-        Log.d("YYY", "after enableLbs at "
-                + Calendar.getInstance().getTimeInMillis());
     }
 
     private void initJump() {

@@ -8,27 +8,32 @@
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
         android:scaleType="fitXY"
-        android:src="@drawable/guide_chat" />
+        android:src="@drawable/group_by_week"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/relativeLayout"
+        android:layout_alignStart="@+id/relativeLayout"
+        android:layout_marginTop="56dp" />
 
     <RelativeLayout
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="330dp" >
-
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:text="· 新增课程论坛\n· 针对单个课程开设\n· 实名交流学习信息\n· 默认关注本学期所有课程，可添加删除"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="@color/menu2"
-            android:textSize="18sp" />
+        android:layout_marginTop="330dp"
+        android:id="@+id/relativeLayout">
 
     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="· 新增按周查看课表，每周课程一目了然"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/menu2"
+        android:textSize="18sp"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp" />
 
 </RelativeLayout>

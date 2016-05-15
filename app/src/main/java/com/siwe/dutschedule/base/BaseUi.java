@@ -16,7 +16,6 @@ import android.widget.RelativeLayout;
 import android.widget.SimpleAdapter.ViewBinder;
 import android.widget.TextView;
 
-import com.baidu.android.pushservice.PushManager;
 import com.siwe.dutschedule.R;
 import com.siwe.dutschedule.service.ScheduleAppWidgetProvider;
 import com.siwe.dutschedule.util.AppCache;
@@ -83,7 +82,6 @@ public class BaseUi extends FragmentActivity {
 		super.onStart();
 		// debug memory
 		debugMemory("onStart");
-		PushManager.activityStarted(this); // Baidu sdk collect
 	}
 
 	@Override
@@ -91,7 +89,6 @@ public class BaseUi extends FragmentActivity {
 		super.onStop();
 		// debug memory
 		debugMemory("onStop");
-		PushManager.activityStoped(this); // Baidu sdk collect
 	}
 
 	@Override

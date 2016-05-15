@@ -84,7 +84,6 @@
                 android:textSize="16dip" />
 
             <ImageView
-                android:id="@+id/mm_alert_btn_divider"
                 android:layout_width="1.0dip"
                 android:layout_height="fill_parent"
                 android:background="@color/menu_devider_color" />

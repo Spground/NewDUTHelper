@@ -13,7 +13,7 @@
         android:layout_alignParentTop="false"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:src="@drawable/guide_main" />
+        android:src="@drawable/preview_video" />
 
     <TextView
         android:id="@+id/textView1"
@@ -22,7 +22,7 @@
         android:layout_below="@+id/imageView1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:text="全新风格主界面"
+        android:text="大工视频墙节目预览，体育赛事想看就看"
         android:textColor="@color/menu2"
         android:textSize="19sp" />
 
