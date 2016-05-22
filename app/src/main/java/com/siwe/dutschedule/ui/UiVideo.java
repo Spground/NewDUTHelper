@@ -156,8 +156,8 @@ public class UiVideo extends BaseUi {
 			String videoCaptureURL = VIDEO_CAPTURE_URL_PREFIX + channelPinYinName + VIDEO_CAPTURE_URL_SUFFIX;
 			Picasso.with(UiVideo.this.getApplicationContext())
 					.load(videoCaptureURL)
-					.placeholder(getDrawable(R.drawable.icon_video))
-					.error(getDrawable(R.drawable.icon_video))
+					.placeholder(R.drawable.icon_video)
+					.error(R.drawable.icon_video)
 					.into(holder.videoCapture);
 			holder.channelName.setText(VideoList.channelName[position]);
 			return convertView;

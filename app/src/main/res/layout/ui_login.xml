@@ -38,7 +38,7 @@
             android:background="@drawable/base_edittext_drawable"
             android:drawableLeft="@drawable/password"
             android:ems="10"
-            android:hint="密码"
+            android:hint="密码（综合教务系统密码）"
             android:inputType="textPassword"
             android:textColor="#000000" />
 
